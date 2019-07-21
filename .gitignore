@@ -1,5 +1,7 @@
-# Ignore Gradle project-specific cache directory
-.gradle
+# Ignore all .xxx except .gitignore itself
+.*
+!.gitignore
 
-# Ignore Gradle build output directory
-build
+# Ignore build output directory
+build/
+out/
