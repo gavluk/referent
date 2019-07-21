@@ -1,0 +1,13 @@
+rootProject.name = 'referent'
+
+// Commons not related directly to referent domain model (should be moved to dedicated repository 'commons'
+include 'commons'
+
+// Core domain model entities
+include 'core'
+
+// Services and persistence layer
+include 'services'
+
+// REST api (spring-boot)
+include 'api'

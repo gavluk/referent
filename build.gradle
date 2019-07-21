@@ -1,0 +1,19 @@
+subprojects {
+    apply plugin: 'java'
+    archivesBaseName = "referent-${it.name}"
+    group = 'ua.com.gavluk.referent'
+    version = '0.1.0-SNAPSHOT'
+
+    repositories {
+        jcenter()
+    }
+    
+    dependencies {
+        testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.5.1'
+        testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.5.1'
+    }
+
+    test {
+        useJUnitPlatform()
+    }
+}
