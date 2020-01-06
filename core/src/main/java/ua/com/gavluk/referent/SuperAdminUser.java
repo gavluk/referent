@@ -2,11 +2,11 @@ package ua.com.gavluk.referent;
 
 import ua.com.gavluk.referent.user.User;
 
-class AnonymousUser extends User {
+public class SuperAdminUser extends User {
 
-    static final String USERNAME = "anonymous";
+    static final String USERNAME = "root";
 
-    AnonymousUser() {
+    SuperAdminUser() {
         super(USERNAME);
     }
 }

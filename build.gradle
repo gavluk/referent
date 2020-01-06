@@ -1,3 +1,8 @@
+ext.versions = [
+        'springBoot': '2.1.7.RELEASE', // https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-web
+        'junit': '5.5.2', // https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api
+]
+
 subprojects {
     apply plugin: 'java'
     archivesBaseName = "referent-${it.name}"
@@ -9,9 +14,7 @@ subprojects {
     }
     
     dependencies {
-
-        testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.5.1'
-        testRuntimeOnly group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.5.1'
+        testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: versions.junit
     }
 
     test {

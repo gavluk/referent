@@ -6,8 +6,5 @@ include 'commons'
 // Core domain model entities
 include 'core'
 
-// Services and persistence layer
-include 'services'
-
 // REST api (spring-boot)
 include 'api'
